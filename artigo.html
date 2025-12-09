@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título do Artigo - Blog do Silverio Alves</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/SA.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Header (igual às outras páginas) -->
+    <header class="header py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <a href="index.html" class="d-inline-block">
+                        <img src="img/SA.png" alt="Logo Blog Silverio Alves" style="height: 60px;">
+                    </a>
+                    <p class="lead d-inline-block ms-2 mb-0">Reflexões sobre política, economia e sociedade</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <form action="busca.html" method="GET" class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="Buscar no blog...">
+                        <button class="btn btn-danger" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg menu_top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="bi bi-house-fill"></i> Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="politica.html"><i class="bi bi-journal-text"></i> Política</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="economia.html"><i class="bi bi-graph-up"></i> Economia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html"><i class="bi bi-person-fill"></i> Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html"><i class="bi bi-envelope-fill"></i> Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-4 flex-grow-1">
+        <div class="row">
+            <!-- Propagandas (Lado Esquerdo) -->
+            <aside class="col-lg-2">
+                <div class="sticky-top" style="top: 20px;">
+                    <div class="card mb-3 text-center">
+                        <div class="card-body p-2">
+                            <img class="img-fluid" src="img/supercop.webp" alt="SuperCop">
+                        </div>
+                    </div>
+                    <!-- Outras propagandas -->
+                </div>
+            </aside>
+
+            <!-- Conteúdo do Artigo -->
+            <main class="col-lg-8">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                        <li class="breadcrumb-item"><a href="politica.html">Política</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Artigo Atual</li>
+                    </ol>
+                </nav>
+
+                <article>
+                    <header class="mb-4">
+                        <h1 class="display-4">Título do Artigo</h1>
+                        <div class="d-flex flex-wrap gap-3 text-muted mb-3">
+                            <span><i class="bi bi-calendar"></i> 15 de Março, 2024</span>
+                            <span><i class="bi bi-person"></i> Por Silverio Alves</span>
+                            <span><i class="bi bi-clock"></i> 5 min de leitura</span>
+                            <span><i class="bi bi-eye"></i> 1,245 visualizações</span>
+                        </div>
+                        <img src="https://via.placeholder.com/1200x600/6c757d/ffffff?text=Imagem+Principal" 
+                             class="img-fluid rounded mb-4" alt="Imagem do artigo">
+                    </header>
+
+                    <div class="article-content">
+                        <p class="lead">Introdução do artigo que resume o conteúdo principal.</p>
+                        
+                        <h2>Primeiro Subtítulo</h2>
+                        <p>Conteúdo do artigo aqui...</p>
+                        
+                        <h3>Subtítulo Secundário</h3>
+                        <p>Mais conteúdo...</p>
+                        
+                        <blockquote class="blockquote bg-light p-4 rounded">
+                            <p class="mb-0">"Citação importante do artigo ou de terceiros."</p>
+                            <footer class="blockquote-footer mt-2">Autor da Citação</footer>
+                        </blockquote>
+                        
+                        <p>Continuação do conteúdo...</p>
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="mt-5">
+                        <h5>Tags:</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="#" class="badge bg-secondary text-decoration-none">Política</a>
+                            <a href="#" class="badge bg-secondary text-decoration-none">Economia</a>
+                            <a href="#" class="badge bg-secondary text-decoration-none">Análise</a>
+                        </div>
+                    </div>
+
+                    <!-- Compartilhamento -->
+                    <div class="mt-4">
+                        <h5>Compartilhe:</h5>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-facebook"></i> Facebook
+                            </a>
+                            <a href="#" class="btn btn-outline-info btn-sm">
+                                <i class="bi bi-twitter"></i> Twitter
+                            </a>
+                            <a href="#" class="btn btn-outline-danger btn-sm">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Comentários -->
+                    <section class="mt-5">
+                        <h3 class="mb-4">Comentários (42)</h3>
+                        <div class="mb-4">
+                            <textarea class="form-control" rows="3" placeholder="Deixe seu comentário..."></textarea>
+                            <button class="btn btn-primary mt-2">Enviar Comentário</button>
+                        </div>
+                        
+                        <!-- Lista de Comentários -->
+                        <div class="comment-list">
+                            <!-- Comentário exemplo -->
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <strong>João Silva</strong>
+                                        <small class="text-muted">2 dias atrás</small>
+                                    </div>
+                                    <p class="mb-0 mt-2">Excelente análise! Concordo com os pontos levantados.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="col-lg-2">
+                <div class="sticky-top" style="top: 20px;">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Artigos Relacionados</h5>
+                            <div class="list-group list-group-flush">
+                                <a href="artigo.html" class="list-group-item list-group-item-action">
+                                    Artigo Relacionado 1
+                                </a>
+                                <a href="artigo.html" class="list-group-item list-group-item-action">
+                                    Artigo Relacionado 2
+                                </a>
+                                <a href="artigo.html" class="list-group-item list-group-item-action">
+                                    Artigo Relacionado 3
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="header py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Blog do Silverio</h5>
+                    <p>Reflexões sobre política, economia e sociedade desde 2005.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Início</a></li>
+                        <li><a href="sobre.html" class="text-white">Sobre</a></li>
+                        <li><a href="contato.html" class="text-white">Contato</a></li>
+                        <li><a href="privacidade.html" class="text-white">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Conecte-se</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center">
+                <p>&copy; 2024 Blog do Silverio Alves. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
